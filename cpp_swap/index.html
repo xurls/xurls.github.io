@@ -1,10 +1,10 @@
-<html lang="zh">
+<html>
 <head>
     <meta charset="utf-8" />
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>关于 - xihale</title>
+<title>优雅地交换两个数的值 | xihale</title>
 
 <link rel="shortcut icon" href="https://xihale.github.io/favicon.ico?v=1618056931565">
 
@@ -33,7 +33,7 @@
 <!--<script src="media/scripts/index.js"></script>-->
 
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
 </head>
 <body>
 <div class="main gt-bg-theme-color-first">
@@ -199,18 +199,89 @@
     }
 </script>
     <div class="post-container">
-        <div class="post-detail">
+        <div class="post-detail gt-bg-theme-color-second">
             <article class="gt-post-content">
-                <div class="post-content">
+                <h2 class="post-title">
+                    优雅地交换两个数的值
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2021-04-10 ·
+                    </time>
                     
+                        <a href="https://xihale.github.io/cpp/" class="post-tags">
+                            # c/c++
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p>##前言<br>
+这是我在一个晚修时无聊时想到的,我称他为保留数据式交换(没什么技术含量,看看思路即可)<br>
+额,写得有点乱,将就看看吧</p>
+<p>##解释<br>
+就是把两个数通过特定的方法结合起来,然后我们可以通过<font color=blue>其中一个值求出另一个值</font></p>
+<p>##方法:<br>
+1.+<br>
+2.-<br>
+3.*<br>
+4./<br>
+当然最好的还是 ^<br>
+注意:像 % &amp; | 这样会舍去数据的无法进行交换</p>
+<p>##代码<br>
+1.+</p>
+<pre><code class="language-cpp">//a=1,b=2
+a+=b;//a=a+b=1+2=3
+b=a-b;//b=a-b=3-2=1
+a-=b;//a=a-b=3-1=2
+</code></pre>
+<p>2.-</p>
+<pre><code class="language-cpp">//a=1,b=2
+a-=b;//a=a-b=1-2=-1
+b+=a;//b=a+b=-1+2=1
+a=b-a;//a=b-a=1-(-1)=2
+</code></pre>
+<p>3.*</p>
+<pre><code class="language-cpp">//a=2,b=3
+a*=b;//a=a*b=2*3=6
+b=a/b;//b=a/b=6/3=2
+a/=b;//a=a/b=6/2=3
+</code></pre>
+<p>4./</p>
+<pre><code class="language-cpp">//a=2.0,b=3.0  这里要用double或float
+a/=b;//a=a/b=2/3
+b*=a;//b=a*b=2/3*3.0=2.0
+a=b/a;//a=b/a=2.0/(2/3)=3.0
+</code></pre>
+<p>5.^ 压轴戏(永远不丢失数据)<br>
+<font color=blue>注:用括号里面的为二进制数</font></p>
+<pre><code class="language-cpp">//a=1=(01),b=2=(10)
+a^=b;//a=a^b=(01)^(10)=11
+b=a^b;//b=a^b=(11)^(10)=01
+a^=b;//a=a^b=(11)^(01)=10
+//此时a=(10)=2,b=(01)=1
+</code></pre>
+<p>这也是我认为的最优的解<br>
+原因:1.它在二进制中转换,而其他的都是在十进制的基础完成,理论来说会<font color=blue>快</font>一点(因为不考虑进位等)<br>
+2.他不会爆 如果两个十进制相加<font color=blue>(加减乘除都可能出现这种情况)</font>的话可能会爆出范围,要用<font color=blue>高精</font>...</p>
+
                 </div>
             </article>
         </div>
-        <br>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://xihale.github.io/Github-mirror/" class="post-title gt-a-link">
+                    Github-镜像
+                </a>
+            </div>
         
 
         
 
+        
+
+        
 
         <div class="site-footer gt-c-content-color-first">
     <div class="slogan gt-c-content-color-first">温故而知新</div>
