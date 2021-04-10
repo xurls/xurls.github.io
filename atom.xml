@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xihale.github.io</id>
     <title>xihale</title>
-    <updated>2021-04-10T06:50:06.950Z</updated>
+    <updated>2021-04-10T06:51:17.359Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xihale.github.io"/>
     <link rel="self" href="https://xihale.github.io/atom.xml"/>
@@ -10,4 +10,11 @@
     <logo>https://xihale.github.io/images/avatar.png</logo>
     <icon>https://xihale.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, xihale</rights>
+    <entry>
+        <title type="html"><![CDATA[cs]]></title>
+        <id>https://xihale.github.io/cs/</id>
+        <link href="https://xihale.github.io/cs/">
+        </link>
+        <updated>2021-04-10T06:50:32.000Z</updated>
+    </entry>
 </feed>
