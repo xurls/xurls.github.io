@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xihale.github.io</id>
     <title>xihale</title>
-    <updated>2021-04-17T00:07:10.500Z</updated>
+    <updated>2021-04-17T00:54:22.667Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xihale.github.io"/>
     <link rel="self" href="https://xihale.github.io/atom.xml"/>
@@ -10,6 +10,44 @@
     <logo>https://xihale.github.io/images/avatar.png</logo>
     <icon>https://xihale.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, xihale</rights>
+    <entry>
+        <title type="html"><![CDATA[DP-最大上升序列]]></title>
+        <id>https://xihale.github.io/DP-最大上升序列/</id>
+        <link href="https://xihale.github.io/DP-最大上升序列/">
+        </link>
+        <updated>2021-04-17T00:48:43.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="a-hrefhttpybtssoiercn8088problem_showphppid1285-target_blank进入题目a"><a href="http://ybt.ssoier.cn:8088/problem_show.php?pid=1285" target="_blank">进入题目</a></h2>
+<h3 id="思路代码主体">思路(代码主体)</h3>
+<pre><code class="language-cpp">sum[i]=max(sum[i],sum[j]+m[i])
+</code></pre>
+<h3 id="代码">代码</h3>
+<pre><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;cstdio&gt;
+#include &lt;vector&gt;
+using namespace std;
+int main()
+{
+	int n,Max=0;
+	cin&gt;&gt;n;
+	vector&lt;int&gt;m(n+1),sum(n+1); //定义两个容器,一个用来存序列,一个存序列大小 
+	for(int i=0;i&lt;n;i++)
+		cin&gt;&gt;m[i]; //输入序列 
+	for(int i=n-1;i&gt;=0;i--)
+	{
+		sum[i]=m[i]; //初始化序列大小为自己本身 
+		for(int j=i+1;j&lt;n;j++)
+		{
+			if(sum[j]+m[i]&gt;sum[i]&amp;&amp;m[i]&lt;m[j]) //判断(j序列和)是否比(i序列和)大并且是不下降的序列 
+				sum[i]=sum[j]+m[i];
+		}
+		if(sum[i]&gt;sum[Max])Max=i;//找最大值的下标 
+	}
+	cout&lt;&lt;sum[Max];//输出 
+	return 0;
+}
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[js-取自己]]></title>
         <id>https://xihale.github.io/js-qu-zi-ji/</id>
