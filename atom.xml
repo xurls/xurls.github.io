@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xihale.github.io</id>
     <title>xihale</title>
-    <updated>2021-04-17T00:06:19.903Z</updated>
+    <updated>2021-04-17T00:06:51.825Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xihale.github.io"/>
     <link rel="self" href="https://xihale.github.io/atom.xml"/>
@@ -79,7 +79,7 @@ int max_size() const //返回最大可允许的vector元素数量值
 void assign(int n,const T&amp; x) //设置向量中前n个元素的值为x
 void assign(const_iterator first,const_iterator last) //向量中[first,last)中元素设置成当前向量元素
 </code></pre>
-<p>##实例</p>
+<h2 id="实例">实例</h2>
 <pre><code class="language-cpp">#include &lt;iostream&gt;
 #include &lt;algorithm&gt;
 #include &lt;vector&gt;
