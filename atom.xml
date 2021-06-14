@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xihale.github.io</id>
     <title>xihale</title>
-    <updated>2021-06-14T06:35:13.819Z</updated>
+    <updated>2021-06-14T07:08:10.040Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xihale.github.io"/>
     <link rel="self" href="https://xihale.github.io/atom.xml"/>
@@ -16,7 +16,16 @@
         <link href="https://xihale.github.io/z1pEL7MQM/">
         </link>
         <updated>2021-06-14T06:24:50.000Z</updated>
-        <content type="html"><![CDATA[<ol>
+        <content type="html"><![CDATA[<p>##前言:</p>
+<blockquote>
+<p>本来是想找个短网址模板搭,奈何找了许久,全都是过于胧肿,不属于我的风格,所以,x-dwz就出来了</p>
+</blockquote>
+<h3 id="效果">效果:</h3>
+<p>外网:  <img src="http://xurl.ga:5212/api/v3/file/source/750/Snipaste_2021-06-14_15-04-24.png?sign=LozBKXPiDPKY2CbhOQ-ULDxVu-uL3qf_8hzSl4Zm8fo%3D%3A0" alt="" loading="lazy"><br>
+1秒不到(背景2秒,没算进来)<br>
+内网: <img src="http://xurl.ga:5212/api/v3/file/source/749/Snipaste_2021-06-14_15-03-11.png?sign=90dQKYlwEiS8KC_sSElgGKx1es4ERSGob5DZn0HpOTE%3D%3A0" alt="" loading="lazy"><br>
+300ms(背景没有准确数据(有缓存))</p>
+<ol>
 <li>下载文件:<br>
 <a href="https://gitee.com/xihale/x-dwz" target="_blank">gitee</a><br>
 <a href="https://github.com/xihale/x-dwz" target="_blank">github</a></li>
