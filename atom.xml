@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xihale.github.io</id>
     <title>xihale</title>
-    <updated>2021-05-05T05:03:43.554Z</updated>
+    <updated>2021-06-14T06:27:47.736Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xihale.github.io"/>
     <link rel="self" href="https://xihale.github.io/atom.xml"/>
@@ -10,6 +10,21 @@
     <logo>https://xihale.github.io/images/avatar.png</logo>
     <icon>https://xihale.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, xihale</rights>
+    <entry>
+        <title type="html"><![CDATA[快速搭建轻量短网址网站]]></title>
+        <id>https://xihale.github.io/z1pEL7MQM/</id>
+        <link href="https://xihale.github.io/z1pEL7MQM/">
+        </link>
+        <updated>2021-06-14T06:24:50.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>下载文件:<br>
+<a href="https://gitee.com/xihale/x-dwz">gitee</a><br>
+<a href="https://github.com/xihale/x-dwz">github</a></li>
+<li>上传至服务器即可</li>
+</ol>
+<h3 id="配置-支持php">配置: 支持PHP</h3>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[优雅地在手机中编程]]></title>
         <id>https://xihale.github.io/codeInMobile/</id>
