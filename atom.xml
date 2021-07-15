@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xihale.github.io</id>
     <title>xihale</title>
-    <updated>2021-07-15T08:21:58.498Z</updated>
+    <updated>2021-07-15T08:33:40.940Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xihale.github.io"/>
     <link rel="self" href="https://xihale.github.io/atom.xml"/>
@@ -10,6 +10,35 @@
     <logo>https://xihale.github.io/images/avatar.png</logo>
     <icon>https://xihale.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, xihale</rights>
+    <entry>
+        <title type="html"><![CDATA[frp服务器搭建+连接]]></title>
+        <id>https://xihale.github.io/frp/</id>
+        <link href="https://xihale.github.io/frp/">
+        </link>
+        <updated>2021-07-15T08:22:04.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="前言">前言</h1>
+<p>在网上看到了许多&quot;免费frp,但都限速得很严重&quot;<br>
+所以我决定自己搭一个自己用!</p>
+<h1 id="开始">开始</h1>
+<ol>
+<li>首先下载<a href="http://www.lu8.win/downloads/frp/frp.bat">☆夢幻煋涳☆大佬的脚本</a></li>
+<li>然后放一份到服务器上运行,一步一步操作即可</li>
+<li>最后用手头上的那份连接服务器即可</li>
+</ol>
+<h1 id="说明">说明</h1>
+<ol>
+<li>如果是http服务器的话,端口是服务器上绑定的端口(8080等),不是自己电脑上的端口</li>
+<li>一般连接时都选择TCP而不是KCP(我不知道这是什么东西)</li>
+</ol>
+<h1 id="白嫖">白嫖</h1>
+<p>进入<a href="http://www.lu8.win/frp.html">☆夢幻煋涳☆大佬的网站</a>,然后开始白嫖</p>
+<h2 id="白嫖需知">白嫖需知</h2>
+<p>请认真查看<a href="http://www.lu8.win/">☆夢幻煋涳☆大佬的网站</a>的告示</p>
+<blockquote>
+<p>最后想说的是别太放肆,善良不一定会永远持续</p>
+</blockquote>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[快速搭建轻量短网址网站]]></title>
         <id>https://xihale.github.io/z1pEL7MQM/</id>
